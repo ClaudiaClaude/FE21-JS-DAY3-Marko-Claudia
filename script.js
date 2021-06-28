@@ -84,18 +84,23 @@
 
 // Exercise Intermediate 2
 
-    var x = Math.floor(Math.random()*100);
+    // var x = Math.floor(Math.random()*101);
 
-    if ( x % 3==0) {
-        document.write("Fizz");
+    for (var x=1; x < 101; x++){
+
+    if( x % 15 ==0) {
+        document.write("FizzBuzz" + "<br>");
     }
 
     else if (x % 5 ==0) {
-        document.write("Buzz");
+        document.write("Buzz " + "<br>");
     }
 
-    else if (x %3 ==0 && x % 5==0) {
-        document.write("FizzBuzz");
+    else if (x % 3 ==0 ) {
+        document.write("Fizz" + "<br>");
+    }
+    else document.write(x + "<br>");
+
     }
 
 console.log(x);
