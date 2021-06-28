@@ -86,15 +86,15 @@
 
     var x = Math.floor(Math.random()*100);
 
-    if ( x % 3) {
+    if ( x % 3==0) {
         document.write("Fizz");
     }
 
-    else if (x % 5) {
+    else if (x % 5 ==0) {
         document.write("Buzz");
     }
 
-    else if (x %3 && x % 5) {
+    else if (x %3 ==0 && x % 5==0) {
         document.write("FizzBuzz");
     }
 
